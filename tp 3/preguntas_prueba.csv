@@ -1,0 +1,41 @@
+pregunta,categoria_esperada,respuesta_esperada_id,nota
+bnas tardes!,saludo_cierre,SAL01,tipeo / abreviatura de saludo
+"mil gracias, re amables",saludo_cierre,SAL02,parafraseo informal de cierre
+hasta q hora estan abiertos hoy,horarios,HOR01,parafraseo informal + abreviatura
+los domingos atienden?,horarios,HOR02,parafraseo; palabra nueva (domingo) no presente en el dataset
+el 25 de mayo abren?,horarios,HOR03,feriado sin decir la palabra 'feriado'
+escribi tarde y nadie me contesto,horarios,HOR04,parafraseo indirecto de tiempo de respuesta
+me pasas la direcion,ubicacion_contacto,UBI01,tipeo (direcion)
+hay lugar para estacionar cerca?,ubicacion_contacto,UBI02,parafraseo
+cual es su numero de telefono,ubicacion_contacto,UBI03,parafraseo de contacto
+kiero turno para la dermatologa,turnos_portal,TUR01,tipeo informal (kiero)
+puedo reservar online?,turnos_portal,TUR01,parafraseo con 'online' en vez de 'web'
+"al final no puedo ir, lo doy de baja",turnos_portal,TUR02,confusión cancelar vs reprogramar: sin la palabra 'cancelar'
+me pasas el turno del martes al jueves?,turnos_portal,TUR03,confusión reprogramar vs cancelar/sacar turno
+turno,turnos_portal,TUR01,"ambigua: una sola palabra (sacar, cancelar o cambiar)"
+"no me deja reservar la pagina, se queda cargando",turnos_portal,TUR05,parafraseo de problema en el portal
+aceptan osde?,obras_sociales,OBR01,nombre de cobertura que no está en la lista; vocabulario desconocido
+"tengo prepaga, como saco turno?",obras_sociales,OBR02,confusión turno por obra social vs turno por portal (TUR01)
+me atienden sin cobertura?,obras_sociales,OBR03,confusión particular vs obra social
+la prepaga me cubre el botox?,obras_sociales,OBR04,confusión cobertura vs tratamiento/precio de toxina
+el peeling sirve para las manchas?,tratamientos,TRA03,confusión peeling vs IPL (ambos para manchas)
+mesoterapia para la papada,tratamientos,TRA05,confusión mesoterapia facial vs corporal (zona ambigua)
+diferencia entre laser y luz pulsada,tratamientos,TRA07,confusión IPL vs láser fraccionado vs depilación
+el laser para depilar es el mismo que para cicatrices?,tratamientos,TRA08,confusión depilación láser vs láser fraccionado
+toxina o acido hialuronico para las arrugas de la frente,tratamientos,TRA09,confusión toxina vs relleno
+puedo ponerme acido antes del peling,preparacion_cuidados,PRE01,tipeo (peling) + confusión antes vs después del peeling
+se me esta descamando la piel post peeling,preparacion_cuidados,PRE02,confusión antes vs después del peeling
+me afeito antes del laser?,preparacion_cuidados,PRE05,confusión depilación láser antes vs después / láser fraccionado
+despues de la meso de la cara puedo ir a entrenar,preparacion_cuidados,PRE09,confusión mesoterapia facial vs corporal (cuidados)
+cuanto sale una consulta con la dermatologa,precios,PRC01,confusión precio de consulta vs tratamiento
+el peeling sale 64 mil cada vez o es el total?,precios,PRC02,confusión precio por sesión vs tratamiento completo
+cuanto sale el tratamiento entero de peeling,precios,PRC03,confusión tratamiento completo vs por sesión
+precio meso corporal,precios,PRC05,confusión mesoterapia facial vs corporal (precio); estilo telegráfico
+cuanto sale depilarse las piernas,precios,PRC08,confusión depilación vs IPL; zona no nombrada en la respuesta literal
+cuanto sale el relleno de ojeras con laser,precios,PRC12,fuera de lista de precios: debe derivar (no inventar)
+se me hincho el labio despues del relleno y me duele mucho,urgencias_derivacion,URG01,confusión urgencia vs cuidado post relleno normal (PRE08)
+te paso foto de un grano a ver q es,urgencias_derivacion,URG03,fuera de alcance: diagnóstico por foto
+que pastilla tomo para la alergia,urgencias_derivacion,URG05,fuera de alcance: indicación de medicación
+hablar con un humano,urgencias_derivacion,URG02,parafraseo; confusión con 'sos humano o bot' (SAL03)
+venden protector solar?,fuera_de_alcance,FUE01,fuera de alcance cercano al dominio (no hay respuesta en el dataset)
+cual es la capital de francia,fuera_de_alcance,FUE01,fuera de alcance total
